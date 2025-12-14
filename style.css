@@ -1,0 +1,39 @@
+.hero{
+    height: 100vh; 
+    background-image: url('img/angel.jpg');
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    justify-content: center;
+}
+.hero-content h1{
+    color:rgb(246, 248, 249);
+    font-size: 6rem;
+    font-weight: 100; /* Estilo del texto*/
+    font-family: Arial, sans-serif;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.7);
+}
+.content-text{
+
+    justify-content: first baseline;
+
+}
+.content-text h2{
+    color: rgb(165, 18, 165);
+    justify-content: center;
+
+
+}
+
+
+.section2-content image{
+    display: flex;
+    justify-content: space-between; /* center | flex-end | flex-start */
+    align-items: flex-end;
+
+}
+
