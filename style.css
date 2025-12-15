@@ -1,5 +1,19 @@
-.hero{
-    height: 100vh; 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 800px;
+    display: flex;
+    gap: 50px;
+    margin: 20px 0 0 200px ;
+
+}
+
+.hero {
+    height: 100vh;
     background-image: url('img/angel.jpg');
     background-position: center;
     display: flex;
@@ -10,30 +24,38 @@
 .hero-content {
     justify-content: center;
 }
-.hero-content h1{
-    color:rgb(246, 248, 249);
+
+.hero-content h1 {
+    color: rgb(246, 248, 249);
     font-size: 6rem;
-    font-weight: 100; /* Estilo del texto*/
+    font-weight: 100;
+    /* Estilo del texto*/
     font-family: Arial, sans-serif;
-    text-shadow:2px 2px 8px rgba(0,0,0,0.7);
-}
-.content-text{
-
-    justify-content: first baseline;
-
-}
-.content-text h2{
-    color: rgb(165, 18, 165);
-    justify-content: center;
-
-
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
+.content-text {
 
-.section2-content image{
     display: flex;
-    justify-content: space-between; /* center | flex-end | flex-start */
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    width: 800px;
 
 }
 
+.container img {
+    width: 300px;
+    height: 300px;
+
+}
+
+.content-text a {
+    text-decoration: none;
+    background-color: #FF6666;
+    width: 100px;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+}
