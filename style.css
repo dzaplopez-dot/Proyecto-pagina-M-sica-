@@ -8,7 +8,7 @@
     width: 800px;
     display: flex;
     gap: 200px;
-    margin: 100px 0 0 600px;
+    margin: 100px 0 0 300px;
 
 }
 
@@ -41,8 +41,13 @@
 
 }
 
+.content-text h2 {
+    color: #df1ba4;
+
+
+}
+
 .container img {
-    width: 400px;
     height: 400px;
     justify-content: center;
 
@@ -78,9 +83,10 @@
     background-position: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
     margin-top: 200px;
+    font-size: medium;
 }
 
 .footer-content h2 {
@@ -94,6 +100,7 @@
 
 }
 
+
 .footer-links {
     display: flex;
     flex-direction: row-reverse;
@@ -102,6 +109,7 @@
     color: aliceblue;
     justify-content: space-around;
     text-decoration: none;
+    padding: 100px;
 
 }
 
@@ -110,4 +118,8 @@
     justify-content: center;
 
 
+}
+
+.container-image {
+    height: 200px;
 }
