@@ -26,7 +26,6 @@
     color: rgb(246, 248, 249);
     font-size: 6rem;
     font-weight: 100;
-    /* Estilo del texto*/
     font-family: Arial, sans-serif;
 
 }
@@ -38,12 +37,10 @@
     justify-content: center;
     text-align: justify;
 
-
 }
 
 .content-text h2 {
-    color: #df1ba4;
-
+    color: #e435af;
 
 }
 
@@ -87,39 +84,42 @@
     flex-direction: column;
     margin-top: 200px;
     font-size: medium;
+
 }
 
 .footer-content h2 {
     color: rgb(246, 248, 249);
     font-size: 6rem;
     font-weight: 80;
-    /* Estilo del texto*/
     font-family: Arial, sans-serif;
 
-
-
 }
-
 
 .footer-links {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    background-color: #FF6666;
+    background-color: #f15757;
     color: aliceblue;
     justify-content: space-around;
-    text-decoration: none;
     padding: 100px;
+    text-decoration: none;
 
 }
 
-.footer-column {
+.footer-columna link {
     color: aliceblue;
     justify-content: center;
-
 
 }
 
 .container-image {
     height: 200px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ccc;
+    justify-content: left;
+
 }
