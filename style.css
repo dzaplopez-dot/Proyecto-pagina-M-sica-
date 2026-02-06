@@ -1,14 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 
 .container {
     width: 800px;
     display: flex;
-    gap: 200px;
-    margin: 100px 0 0 300px;
+    gap: 100px;
+    margin: 80px;
+    align-items: center;
 
 }
 
@@ -16,19 +18,35 @@
     height: 100vh;
     background-image: url('img/angel.jpg');
     background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* texto degradado en el hero*/
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-.hero-content h1 {
-    color: rgb(246, 248, 249);
-    font-size: 6rem;
-    font-weight: 100;
+    font-size: 120px;
+    font-weight: 700;
+    letter-spacing: 8px;
+
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    white-space: nowrap;
+    /* evita salto de línea */
     font-family: Arial, sans-serif;
-
 }
+
+.texto span {
+    border: none;
+    outline: none;
+}
+
 
 .content-text {
 
@@ -36,6 +54,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: justify;
+    
 
 }
 
@@ -51,7 +70,7 @@
 }
 
 .content-text a {
-    margin-top: 20px;
+    margin:20px;
     text-decoration: none;
     background-color: #ff5d5d;
     width: 100px;
@@ -72,6 +91,7 @@
     border-radius: 8px;
     font-size: 16px;
     text-align: center;
+
 }
 
 .footer-content {
@@ -82,7 +102,7 @@
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 100px;
     font-size: medium;
 
 }
