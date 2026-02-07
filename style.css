@@ -2,16 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: white;
 }
 
 .container {
-    width: 800px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
     display: flex;
-    gap: 100px;
-    margin: 80px;
     align-items: center;
+    justify-content: space-between;
+    
+}
 
+.seccion2 {
+    background-color:#ffffff;
+}
+
+.seccion3 {
+    background-color: #ffffff;
 }
 
 .hero {
@@ -22,124 +36,172 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+
 
 /* texto degradado en el hero*/
 .texto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    font-size: 120px;
-    font-weight: 700;
-    letter-spacing: 8px;
-
-    color: rgba(255, 255, 255, 0.6);
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.7);
     text-align: center;
-    white-space: nowrap;
-    /* evita salto de línea */
     font-family: Arial, sans-serif;
+    
 }
 
 .texto span {
     border: none;
     outline: none;
+    color: #ffffff;
+    
 }
 
 
 .content-text {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: justify;
-    
-
 }
 
 .content-text h2 {
-    color: #e435af;
+    color: #f45252;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
 
+.content-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #010101;
 }
 
 .container img {
-    height: 400px;
-    justify-content: center;
-
+    margin: 90px;
+    height: 580px;
+    width: 400px;
+    
 }
 
 .content-text a {
-    margin:20px;
     text-decoration: none;
-    background-color: #ff5d5d;
-    width: 100px;
+    background-color: #f03b56;
     color: white;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 16px;
+    padding: 15px 80px;
+    border-radius: 18px;
+    font-size: 1rem;
+    font-weight: 500;
     text-align: center;
+    align-self: flex-start;
+    letter-spacing: 1px;
 }
+
 
 .footer-content a {
-    margin-top: 20px;
     text-decoration: none;
-    background-color: #ff5d5d;
-    width: 100px;
+    background-color: #fd4a65;
     color: white;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 16px;
+    padding: 15px 80px;
+    border-radius: 18px;
+    font-size: 1rem;
+    font-weight: 500;
     text-align: center;
-
+    display: inline-block;
+    margin-top: 1px;
 }
+
 
 .footer-content {
     height: 100vh;
     background-image: url('img/raptis.png');
     background-position: center;
+    background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: column;
-    margin-top: 100px;
-    font-size: medium;
-
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
 }
 
-.footer-content h2 {
-    color: rgb(246, 248, 249);
-    font-size: 6rem;
-    font-weight: 80;
-    font-family: Arial, sans-serif;
+
+.footer-content > div {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
 
 }
 
 .footer-links {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
-    background-color: #f15757;
-    color: aliceblue;
-    justify-content: space-around;
-    padding: 100px;
+    background-color: #f03b56;
+    padding: 80px 60px;
+    text-align: center;
+    
+}
+
+.footer-columna {
+    flex: 1;
+    padding: 0 100px;
+}
+
+.footer-content h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color:#ffffff;
+    
+}
+
+.footer-columna h3 {
+    color:#ffffff;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer-columna ul {
+    list-style: none;
+}
+
+.footer-columna ul li {
+    margin-bottom: 15px;
+}
+
+.footer-columna ul li a {
+    color:#ffffff;
     text-decoration: none;
-
-}
-
-.footer-columna link {
-    color: aliceblue;
-    justify-content: center;
-
-}
-
-.container-image {
-    height: 200px;
+    font-size: 0.9rem;
+    
 }
 
 footer a {
     text-decoration: none;
-    color: #ccc;
-    justify-content: left;
+    color: rgba(255, 255, 255, 0.7);
+}
 
+footer a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 60px;
+    color:#ffffff;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f03b56;
 }
